@@ -18,7 +18,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent" >
 
             <Button
                 android:id="@+id/clearBTN"
@@ -26,20 +26,66 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/clear"
-                android:textSize="24sp"
                 android:background="#DD2C00"
-                android:textColor="#FF000000" />
+                android:text="@string/clear"
+                android:textColor="#FF000000"
+                android:textSize="24sp" />
 
             <Button
-                android:id="@+id/parenthesesBTN"
+                android:id="@+id/sinBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#FF000000"
+                android:text="@string/sin" />
+
+            <Button
+                android:id="@+id/cosBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#FF000000"
+                android:text="@string/cos" />
+
+            <Button
+                android:id="@+id/tanBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#FF000000"
+                android:text="@string/tan" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/openParenBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/parentheses"
-                android:textSize="24sp"
-                android:textColor="#FF000000" />
+                android:text="@string/openParen"
+                android:textColor="#FF000000"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/closedParenBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/closedParen"
+                android:textColor="#FF000000"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/exponentBTN"
@@ -263,15 +309,16 @@
         tools:ignore="LabelFor" />
 
     <ImageButton
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:id="@+id/backspaceBTN"
-        android:background="@color/black"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@color/black"
         android:contentDescription="@string/backspace"
-        app:srcCompat="@drawable/backspace"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/backspace" />
 </androidx.constraintlayout.widget.ConstraintLayout>

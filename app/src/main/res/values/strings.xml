@@ -13,7 +13,8 @@
 
     <string name = "clear">C</string>
     <string name = "exponent">^</string>
-    <string name = "parentheses">( )</string>
+    <string name = "openParen">(</string>
+    <string name = "closedParen">)</string>
     <string name = "divide">÷</string>
     <string name = "multiply">×</string>
     <string name = "add">+</string>
@@ -23,6 +24,11 @@
     <string name = "equals">=</string>
 
     <string name = "backspace"> </string>
+
+    <string name = "sin">sin</string>
+    <string name = "cos">cos</string>
+    <string name = "tan">tan</string>
+
     <string name = "display">Enter an expression</string>
 
 
